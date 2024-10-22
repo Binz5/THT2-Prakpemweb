@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masbin's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #10a1cd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0bd3d3;
+    color: black;
+}
+
+section {
+    padding: 40px;
+    margin: 20px auto;
+    width: 80%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#about p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+#services {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.service-item {
+    flex-basis: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.service-item:hover {
+    background-color: #ddd;
+}
+
+.service-item h3 {
+    margin-bottom: 10px;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    padding: 10px 20px;
+    background-color: #10a1cd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background-color: #0bd3d3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    section {
+        width: 90%;
+    }
+    #services {
+        flex-direction: column;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Masbin's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Welcome to my personal portfolio website! Here you can learn more about me, my skills, and how to get in touch. Explore my work and feel free to reach out.</p>
+    </section>
+
+    <section id="about">
+        <img src="Profile2.jpg" alt="Profile Picture">
+        <h2>About Me</h2>
+        <p>Hello! I'm Masbin, a passionate web developer with a focus on creating functional and visually appealing websites. 
+            I enjoy working on projects that challenge me to grow and improve my skills. 
+            Regarding hobbies, I like to make cinematic videos and I also like to play mobile legends games,
+             I like nature, I was born in Java, and yaps I am Javanese, I am a person who is always hungry for new challenges and opportunities to grow. 
+             With a background in html, I combine creativity and an analytical approach to create meaningful work. 
+             For me, every project is an opportunity to learn and create something extraordinary.</p>
+    </section>
+
+    <section id="services">
+        <div class="service-item">
+            <h3>Web Development</h3>
+            <p>Building modern, responsive websites that engage users.</p>
+        </div>
+        <div class="service-item">
+            <h3>UI/UX Design</h3>
+            <p>Creating intuitive and user-friendly interfaces for web and mobile apps.</p>
+        </div>
+        <div class="service-item">
+            <h3>Consultation</h3>
+            <p>Offering expert advice to help you plan and execute your web projects.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Masbin's Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
